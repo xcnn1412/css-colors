@@ -7,10 +7,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./style.css" />
   <title>CSS Color Hack Hours</title>
+  <style>
+     body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(
+        to right,
+        hsl(0, 100%, 70%),      /* pink */
+        hsl(240, 100%, 70%)     /* blue */
+      );
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: sans-serif;
+    }
+
+    .box {
+      background-color: hsla(0, 50%, 100%, 0.5); /* semi-transparent white */
+      padding: 30px;
+      width: 90%;
+      max-width: 700px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #333;
+    }
+  </style>
 </head>
 
 <body>
-  <!-- Start coding here -->
+   <div class="box">
+    <h1>👾 Welcome to CSS Color 👾</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a dui id nisi hendrerit aliquet. Nunc odio sem, consectetur ac quam quis, vulputate ullamcorper neque. Suspendisse varius efficitur mattis. Donec porta massa lorem, at volutpat enim consectetur semper. Nullam dapibus eget diam eu vestibulum. Sed suscipit sapien sed nibh bibendum, vel dictum lectus elementum. Curabitur et diam mauris. Sed ac convallis ante. Phasellus consectetur sollicitudin nunc venenatis rutrum. Nulla ullamcorper, nibh a porttitor aliquam, leo sem maximus justo, ac sagittis dui nulla ut massa. Duis vitae cursus mi, nec placerat tellus. Maecenas a erat et sapien volutpat aliquet.</p>
+  </div>
 </body>
 
 </html>
